@@ -1,0 +1,22 @@
+{
+  "name": "dot",
+  "version": "1.0.0",
+  "description": "自动布点工具",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard --fix && npm-ensure -t deps",
+    "prepublish": "npm test && npm-ensure -t changelog",
+    "precommit": "standard && npm-ensure -t deps"
+  },
+  "author": "evan.wyd",
+  "dependencies": {
+    "commander": "^2.11.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.2",
+    "npm-ensure": "^1.0.0",
+    "husky": "0.x",
+    "istanbul": "*",
+    "standard": "^8.2.0"
+  }
+}
